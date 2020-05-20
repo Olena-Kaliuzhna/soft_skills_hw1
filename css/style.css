@@ -74,6 +74,8 @@ body {
 
 .Main-questions > h3 {
   padding-left: 70px;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .Main-questions-list > li {
@@ -90,6 +92,8 @@ body {
 }
 .book-for > h3 {
   padding-left: 70px;
+  font-style: italic;
+  font-size: 20px;
 }
 
 /*MindMap*/
