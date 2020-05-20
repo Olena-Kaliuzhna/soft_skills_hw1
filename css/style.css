@@ -20,9 +20,14 @@ body {
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
+/*MindMap*/
+.MindMap > img {
+  max-width: 100%;
+}
+
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -64,7 +69,7 @@ body {
 }
 
 .Main-questions {
-  width: 530px;
+  max-width: 530px;
   margin-right: 100px;
   background-color: #ffffff;
   -webkit-box-shadow: 25px 16px 19px 7px rgba(34, 60, 80, 0.2);
@@ -96,14 +101,11 @@ body {
   font-size: 20px;
 }
 
-/*MindMap*/
-.MindMap {
-  width: auto;
-}
+
 
 /*opinion-about-the-book*/
 .our-team {
-  width: 1170px;
+  max-width: 1170px;
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1.2fr;
   grid-template-rows: repeat(2, 190px);
@@ -164,4 +166,56 @@ body {
 
 .Made-by > h3 {
   font-size: 22px;
+}
+
+@media (max-width:1200px){
+  .main-container {
+    max-width: 970px;
+  }
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bottom-link{
+    margin-top: 5px;
+  }
+  .h3-group{
+    margin: 18px;
+  }
+  .book-author{
+    margin-top: 0px;
+    line-height: 25px;
+    padding-top: 35px;
+  }
+  .book-name{
+    margin-left: 100px;
+    margin-top: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width:992px){
+  .main-container {max-width: 750px;}
+  .book-name{
+    margin-left: 100px;
+    margin-top: 15px;
+    line-height: 25px;
+  }
+  .book-author{
+    margin-top: 0px;
+    line-height: 25px;
+    padding-top: 25px;
+  }
+  .bottom-link{
+    margin-top: 5px;
+  }
+  .h3-group{
+    margin: 8px;
+  }
+  }
+
+
+@media (max-width:767px){
+  .main-container {max-width: none;
+  }
 }
