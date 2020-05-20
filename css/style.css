@@ -35,7 +35,7 @@ body {
 
 .Book-header {
   background-color: #222331;
-  height: 100px;
+  min-height: 100px;
   margin-bottom: 50px;
 }
 
@@ -216,6 +216,67 @@ body {
 
 
 @media (max-width:767px){
-  .main-container {max-width: none;
+  .main-container {max-width: 320px;
   }
-}
+  .about-book{
+    flex-wrap: wrap;
+  }
+  .Main-questions {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 530px;
+  }
+  .book-for {
+    padding: 0px;
+  }
+  .Book-header-wraper{
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: center;
+    align-content: space-around;
+  }
+
+    .h3-group {
+      display: none;
+    }
+    
+    .book-name {
+      text-align: center;
+      margin: 0;
+    }
+    .book-author{
+      text-align: center;
+      margin: 0;
+    }
+    .Made-by {
+      align-items: center;
+      padding: 20px 75px;
+    }
+    .our-team > li{
+      margin-bottom: 20px;
+    }
+  }
+
+  img[tabindex="0"] {
+    cursor: zoom-in;
+  }
+  img[tabindex="0"]:focus {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 99%;
+    max-height: 99%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+  }
+  img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
+  img[tabindex="0"]:focus ~ * {
+    pointer-events: none;
+    cursor: zoom-out;
+  }
+
