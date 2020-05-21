@@ -15,16 +15,15 @@ body {
   line-height: 21px;
 }
 .main-container {
-  background-color: #fff4e6;
+  background-color: #d8d8d8;
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 /*MindMap*/
-.MindMap > img {
-  max-width: 100%;
+.MindMap img {
+  width: 1200px;
 }
-
 
 .container {
   max-width: 1170px;
@@ -101,13 +100,11 @@ body {
   font-size: 20px;
 }
 
-
-
 /*opinion-about-the-book*/
 .our-team {
   max-width: 1170px;
   display: grid;
-  grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.1fr 1.4fr 1fr 1fr 1.2fr;
   grid-template-rows: repeat(2, 190px);
   grid-gap: 40px 15px;
   padding: 10px;
@@ -126,17 +123,17 @@ body {
   grid-area: 1/1/3/2;
 }
 
-.team2 {
+.team4 {
   grid-area: 1/2/3/3;
 }
 .team3 {
   grid-area: 1/3/2/5;
 }
-.team4 {
+.team5 {
   grid-area: 2/3/3/5;
 }
 
-.team5 {
+.team2 {
   grid-area: 1/5/3/6;
 }
 
@@ -154,7 +151,7 @@ body {
 /*Made-by*/
 .Made-by {
   background-color: #222331;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   color: #ffffff;
   padding: 20px 50px;
@@ -168,7 +165,7 @@ body {
   font-size: 22px;
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
   .main-container {
     max-width: 970px;
   }
@@ -176,50 +173,68 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .bottom-link{
+  .our-team li {
+    margin-bottom: 15px;
+  }
+  .our-team img {
+    height: 110px;
+  }
+  .bottom-link {
     margin-top: 5px;
   }
-  .h3-group{
+  .h3-group {
     margin: 18px;
   }
-  .book-author{
+  .book-author {
     margin-top: 0px;
     line-height: 25px;
     padding-top: 35px;
   }
-  .book-name{
+  .book-name {
     margin-left: 100px;
     margin-top: 21px;
     line-height: 25px;
   }
+  .MindMap a img {
+    max-width: 970px;
+  }
 }
 
-@media (max-width:992px){
-  .main-container {max-width: 750px;}
-  .book-name{
+@media (max-width: 992px) {
+  .main-container {
+    max-width: 750px;
+  }
+  .book-name {
     margin-left: 100px;
     margin-top: 15px;
     line-height: 25px;
   }
-  .book-author{
+  .book-author {
     margin-top: 0px;
     line-height: 25px;
     padding-top: 25px;
   }
-  .bottom-link{
+  .bottom-link {
     margin-top: 5px;
   }
-  .h3-group{
+  .h3-group {
     margin: 8px;
   }
+  .MindMap a img {
+    max-width: 750px;
   }
+}
 
-
-@media (max-width:767px){
-  .main-container {max-width: 320px;
+@media (max-width: 767px) {
+  .main-container {
+    max-width: 320px;
   }
-  .about-book{
+  .about-book {
     flex-wrap: wrap;
+  }
+  .about-book h3 {
+    padding-left: 0;
+    text-align: center;
   }
   .Main-questions {
     margin: 0;
@@ -229,54 +244,46 @@ body {
   .book-for {
     padding: 0px;
   }
-  .Book-header-wraper{
+  .Book-header-wraper {
     flex-wrap: wrap;
     padding: 0px;
     justify-content: center;
     align-content: space-around;
   }
 
-    .h3-group {
-      display: none;
-    }
-    
-    .book-name {
-      text-align: center;
-      margin: 0;
-    }
-    .book-author{
-      text-align: center;
-      margin: 0;
-    }
-    .Made-by {
-      align-items: center;
-      padding: 20px 75px;
-    }
-    .our-team > li{
-      margin-bottom: 20px;
-    }
+  .book-name {
+    text-align: center;
+    margin: 0;
+  }
+  .book-author {
+    text-align: center;
+    margin: 0;
+  }
+  .Made-by {
+    align-items: center;
+    padding: 20px 75px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .h3-group {
+    margin-bottom: 0px;
   }
 
-  img[tabindex="0"] {
-    cursor: zoom-in;
+  .our-team > li {
+    margin-bottom: 20px;
   }
-  img[tabindex="0"]:focus {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-    max-width: 99%;
-    max-height: 99%;
-    margin: auto;
-    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+  li h3 {
+    margin: 0;
+    text-align: center;
   }
-  img[tabindex="0"]:focus,  /* убрать строку, если не нужно, чтобы при клике на увеличенное фото, оно возвращалось в исходное состояние */
-  img[tabindex="0"]:focus ~ * {
-    pointer-events: none;
-    cursor: zoom-out;
+  .MindMap a img {
+    max-width: 320px;
   }
-
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  color: #ff6b08;
+}
