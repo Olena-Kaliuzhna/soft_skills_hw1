@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Playfair Display', 'Raleway','Poppins', 'Arial', sans-serif;
+  font-family: 'Playfair Display', 'Raleway', 'Poppins', 'Arial', sans-serif;
   color: #000000;
   font-size: 14px;
   line-height: 21px;
@@ -48,8 +48,8 @@ body {
   padding: 50px 0;
 }
 
-.book-title.{
-margin-bottom: ;
+.book-title. {
+  margin-bottom: ;
 }
 
 .book-name {
@@ -68,7 +68,7 @@ margin-bottom: ;
   padding: 30px 0;
 }
 
-.book-img{
+.book-img {
   margin-top: 30px;
   margin-left: 250px;
 }
@@ -98,7 +98,7 @@ margin-bottom: ;
 .Main-questions-list > li {
   padding-right: 10px;
   padding-bottom: 2px;
-  font-family:'Poppins';
+  font-family: 'Poppins';
   font-size: 14px;
   line-height: 21px;
 }
@@ -116,8 +116,8 @@ margin-bottom: ;
   font-style: italic;
   font-size: 20px;
 }
-.book-for-list>li {
- font-family:'Poppins';
+.book-for-list > li {
+  font-family: 'Poppins';
 }
 
 /*opinion-about-the-book*/
@@ -207,13 +207,19 @@ margin-bottom: ;
   }
   .book-author {
     margin-top: 0px;
+    margin-left: 100px;
     line-height: 25px;
-    padding-top: 35px;
+    padding-top: 0px;
+    text-align: center;
   }
   .book-name {
-    margin-left: 100px;
+    margin-left: 115px;
     margin-top: 21px;
     line-height: 25px;
+    text-align: center;
+  }
+  .book-img {
+    margin-left: 230px;
   }
   .MindMap a img {
     max-width: 970px;
@@ -228,11 +234,17 @@ margin-bottom: ;
     margin-left: 100px;
     margin-top: 15px;
     line-height: 25px;
+    text-align: center;
   }
   .book-author {
     margin-top: 0px;
     line-height: 25px;
-    padding-top: 25px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  .book-img {
+    margin-left: 180px;
+    margin-right: 10px;
   }
   .bottom-link {
     margin-top: 5px;
@@ -248,6 +260,12 @@ margin-bottom: ;
 @media (max-width: 767px) {
   .main-container {
     max-width: 320px;
+  }
+  .book-img {
+    display: none;
+  }
+  .Book-header-wraper a {
+    padding-bottom: 20px;
   }
   .about-book {
     flex-wrap: wrap;
